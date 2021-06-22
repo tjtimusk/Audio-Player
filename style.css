@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #303030;
+  font-family: 'Helvetica', sans-serif;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.page-content-container {
+  margin: 20vh 20vw;
+  justify-content: center;
+}
