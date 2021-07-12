@@ -20,7 +20,7 @@
   background: radial-gradient(#202020 1%, #101010 99%);
   border-radius: 2px 2px;
   border: solid 1px #555555;
-  /*box-shadow: 0 2vh 2vw 0 #101010;*/
+  box-shadow: 0 2vh 2vw 0 #101010;
   display: flex;
   height: 10vw;
   position: relative;
@@ -47,6 +47,18 @@
 }
 
 /* Thumbnail/Play Button */
+.thumbnail-container {
+  background: none;
+  border-radius: 50%;
+  height: 100%;
+  max-height: 90px;
+  max-width: 90px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+}
+
 .thumbnail-overlay {
   background: #101010;
   opacity: .6;
@@ -59,16 +71,14 @@
   transition-duration: .8s;
 }
 
-.thumbnail-container {
-  background: none;
-  border-radius: 50%;
-  height: 100%;
-  max-height: 90px;
-  max-width: 90px;
-  opacity: 1;
-  overflow: hidden;
+.fa-play {
   position: relative;
-  width: 20%;
+  z-index: 10;
+}
+
+.fa-pause {
+  position: relative;
+  z-index: 10;
 }
 
 .play-pause-button {
@@ -84,16 +94,6 @@
   vertical-align: middle;
   width: 100%;
   z-index: 1;
-}
-
-.fa-play {
-  position: relative;
-  z-index: 10;
-}
-
-.fa-pause {
-  position: relative;
-  z-index: 10;
 }
 
 .play-pause-button .fa-pause {

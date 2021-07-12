@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="HTML page">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="audioplayer.css">
+</head>
+
+<body>
+  <article class="page-content-container">
+    <!-- This is the Html for the player itself -->
+    <div class="audio-player-container">
+      <!-- This is the play/pause button & thumbnail-->
+
+      <div class="thumbnail-container">
+        <button id="play" class="action-button play-pause-button">
+          <i class="fa fa-play">
+          </i>
+          <div class="thumbnail-overlay"></div>
+        </button>
+      </div>
+      <!-- the next, previous buttons and the info container-->
+      <div class=info-control-container>
+        <div class="title-controls">
+          <button id="prev" class="action-button">
+            <i class="fa fa-backward"></i>
+          </button>
+          <div class="audio-details">
+            <h2 id="title"></h2>
+            <p id='artist-name'></p>
+          </div>
+          <button id="next" class="action-button">
+            <i class="fa fa-forward"></i>
+          </button>
+        </div>
+        <!-- The Progress bar -->
+        <div class="controls">
+          <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+        <!-- Add Song titles and artist names here-->
+        <div class="audio-sources-container">
+          <ul class="audio-sources-list">
+            <li>
+              <a class="audio-source" href="Media/iNITIAL - Grounded (2.0).mp3">
+                <p class="info-title">Grounded</p>
+                <p class="info-artist">iNITIAL</p>
+              </a>
+              <img src="Media/INT001.jpg" alt="Cover Art" class="cover-art">
+            </li>
+            <li>
+              <a class="audio-source" href="Media/iNITIAL - Night Signal (3.0).mp3">
+                <p class="info-title">Night Signal</p>
+                <p class="info-artist">iNITIAL</p>
+              </a>
+              <img src="Media/INT002.jpg" alt="Cover Art" class="cover-art">
+            </li>
+          </ul>
+        </div>
+        <!-- This is the actual audio element -->
+        <audio src="" id="audio"></audio>
+      </div>
+    </div>
+
+    <script src="audioplayer.js"></script>
+</body>
+
+</html>
